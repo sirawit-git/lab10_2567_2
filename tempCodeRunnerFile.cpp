@@ -10,10 +10,10 @@ int main(){
 	int countF = 0;
 	int studentCount = 0;
 	string grade;
-	cout << "Please input grade of each student (A-F) or input 0 to exit.\n";
+	cout << "Please input grade of each student (A-F) or input 0 to exit.";
 	do{
 		studentCount++;
-		cout << "Student [" << studentCount << "]: ";
+		cout << "\nAStudent [" << studentCount << "]: ";
 		cin >> grade; //The loop must be terminated when grade = '0'
 		if(grade == "0"){
 			break;
@@ -29,13 +29,13 @@ int main(){
 		}else if(grade == "F"){// if grade is F
 			countF++;
 		}else{ // grade is wrong input
-			cout << "Wrong input. Please input again." << endl;
+			cout << "\nWrong input. Please input again." << endl;
 			studentCount--;
 		} 
 	}while(true);
 	
 	
-	cout << "In total " << studentCount - 1 << " students." << endl;
+	cout << "\nIn total " << studentCount - 1 << " students." << endl;
 	cout << "A = " << countA <<", ";
 	cout << "B = " << countB <<", ";
 	cout << "C = " << countC <<", ";
